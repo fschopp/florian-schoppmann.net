@@ -1,0 +1,1113 @@
+---
+layout: default
+title: "Florian Schoppmann"
+---
+
+<nav id="navigation" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="/">Florian Schoppmann</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown mr-2">
+        <a class="nav-link dropdown-toggle" id="projectsDropdown" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          Projects
+        </a>
+        <div class="dropdown-menu" aria-labelledby="projectsDropdown">
+          <h6 class="dropdown-header">Startup</h6>
+          <a class="dropdown-item" href="#aerobotx">aerobotX</a>
+          <div class="dropdown-divider"></div>
+          <h6 class="dropdown-header">Open-Source Software</h6>
+          <a class="dropdown-item" href="#cloudkeeper">CloudKeeper</a>
+          <a class="dropdown-item" href="#madlib">MADlib</a>
+          <div class="dropdown-divider"></div>
+          <h6 class="dropdown-header">Proprietary Software</h6>
+          <a class="dropdown-item" href="#latin">Latin-German Dictionary</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown mr-2">
+        <a class="nav-link dropdown-toggle" id="publicationsDropdown" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          Publications
+        </a>
+        <div class="dropdown-menu" aria-labelledby="publicationsDropdown">
+          <a class="dropdown-item" href="#peer-reviewed">Peer-Reviewed</a>
+          <a class="dropdown-item" href="#manuscripts">Manuscripts</a>
+          <a class="dropdown-item" href="#notes">Technical Notes and Informal Talks</a>
+        </div>
+      </li>
+      <li class="nav-item mr-2">
+        <a class="nav-link" href="#research">Research</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="educationDropdown" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          Education
+        </a>
+        <div class="dropdown-menu" aria-labelledby="educationDropdown">
+          <a class="dropdown-item" href="#theses">Theses</a>
+          <a class="dropdown-item" href="#coursework">Coursework</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="jumbotron">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-4 col-lg-3">
+        <img class="img-fluid" src="/assets/img/florian.jpg" alt="Florian Schoppmann" width="200" height="300"/>
+      </div>
+      <div class="col-md-8 col-lg-9">
+        <h1 class="mt-4 mt-md-0">Hello!</h1>
+        <p class="lead">My name is Florian Schoppmann.</p>
+        <p>
+          I am a software engineer based in San Francisco and the co-founder of aerobotX, a startup building an autonomous airship. In the past, I have also been a consultant, manager, data scientist, and researcher (my PhD is in theoretical computer science). This site shows a selection of my professional and academic work. It also serves as personal archive.
+        </p>
+        <p>
+          If interested in my resume, please see my <a href="https://www.linkedin.com/in/fschopp">LinkedIn profile</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container undo-navbar-margin-top">
+<!-- This div spans almost the entire document, so no indentation -->
+<p>
+  <a class="text-nowrap" href="https://github.com/fschopp"><span class="icon github"></span>GitHub</a>
+  <span class="separator"></span>
+  <a class="text-nowrap" href="https://bitbucket.org/fschopp/"><span class="icon bitbucket"></span>Bitbucket</a>
+  <span class="separator"></span>
+  <a class="text-nowrap" href="https://www.linkedin.com/in/fschopp"><span class="icon linkedin"></span>LinkedIn</a>
+  <span class="separator"></span>
+  <a class="text-nowrap" href="https://www.researchgate.net/profile/Florian_Schoppmann"><span class="icon researchgate"></span>ResearchGate</a>
+  <span class="separator"></span>
+  <a class="text-nowrap" href="https://www.facebook.com/fschopp"><span class="icon facebook"></span>Facebook</a>
+  <span class="separator"></span>
+  <a class="text-nowrap" href="https://twitter.com/fschopp"><span class="icon twitter"></span>Twitter</a>
+  <span class="separator"></span>
+  <a class="text-nowrap" href="mailto:mail@florian-schoppmann.net"><span class="icon mail"></span>Email</a>
+</p>
+<hr/>
+
+<!-- Copied from cloudkeeper.xyz -->
+<svg id="common-svg" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="port-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop id="port-fade-stop-1" offset="5%"/>
+      <stop id="port-fade-stop-2" offset="95%"/>
+    </linearGradient>
+
+    <filter id="drop-shadow" width="150%" height="150%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="1"/>
+      <feOffset dx="1" dy="1" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+</svg>
+
+<h1 id="projects">Professional Projects</h1>
+<p>
+  The following projects I either co-started or started myself. While several of these projects are open-source, they are “professional” projects in that they either constituted a significant part of my day job or I otherwise earned money with them... Please visit my <a href="https://github.com/fschopp?tab=repositories">GitHub site</a> for all of my open-source projects.
+</p>
+
+<h2>Startup</h2>
+<h3 id="aerobotx"><img src="/assets/img/aerobotx.svg" alt="aerobotX logo" width="64" height="40"/> aerobotX (2017–today)</h3>
+<div class="row">
+  <div class="col-lg-5 align-self-center mt-3 mt-lg-0">
+    <div id="aerobotx-video" class="mx-auto embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pvzrx_ZGC54?controls=0t&amp;iv_load_policy=3t&amp;modestbranding=1t&amp;rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="col-lg-7 order-first">
+    <p>
+      <a href="https://aerobotx.net">AerobotX</a> builds an autonomous airship that helps public safety and businesses maintain situational awareness of the physical world. Thanks to being lighter-than-air, our airship does not have to expend energy for lift, allowing uninterrupted all-day flight. The novel propulsion concept enables precise movement in all directions, similar to a helicopter. And even in the unlikely case of an onboard failure, our airship does not fall from the sky but slowly sinks to the ground. Safety built-in!
+    </p>
+    <p>
+      Besides the usual responsibilities of a startup founder, I run all of our software efforts at aerobotX: simulation, flight-control system, and autopilot. Of course, airships are not developed in a vacuum (pun intended), and the small-scale demonstrator shown in the video makes use of open-source projects such as <a href="https://www.ros.org">ROS</a>, <a href="http://gazebosim.org">Gazebo</a>, and <a href="https://github.com/raulmur/ORB_SLAM2">ORB-SLAM</a>.
+    </p>
+    <p class="links">
+      <a class="text-nowrap" href="https://aerobotx.net"><span class="icon link"></span>Web Site</a>
+      <span class="separator"></span>
+      <a class="text-nowrap" href="https://www.youtube.com/channel/UCBQ6dG1xubKgnXz9xdFHLlA"><span class="icon youtube"></span>YouTube</a>
+      <span class="separator"></span>
+      <a class="text-nowrap" href="https://www.facebook.com/aerobotX/"><span class="icon facebook"></span>Facebook</a>
+      <span class="separator"></span>
+      <a class="text-nowrap" href="https://www.linkedin.com/company/aerobotx/"><span class="icon linkedin"></span>LinkedIn</a>
+    </p>
+  </div>
+</div>
+
+<h2>Open-Source Software</h2>
+<h3 id="cloudkeeper"><img src="https://cloudkeeper.xyz/assets/cloudkeeper-logo.svg" alt="CloudKeeper logo" width="64" height="64"/> CloudKeeper (2012–2016)</h3>
+<div class="row">
+  <div class="col-md-3 align-self-center text-center mt-3 mt-md-0">
+    <svg id="cloudkeeper-figure" class="w-100 h-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 10 330 205">
+      <defs>
+        <circle id="port" r="10"/>
+        <marker id="connection-marker" viewBox="0 0 28 12" refX="34" refY="6" markerUnits="userSpaceOnUse"
+                markerWidth="15" markerHeight="6" orient="auto">
+          <path d="M 0 0 L 16 6 L 0 12 z"/>
+        </marker>
+      </defs>
+
+      <rect id="M" class="module" x="15" y="15" rx="7" ry="7" width="300" height="195"/>
+
+      <path id="a->i" class="connection" d="M15 82.5 C 75 15, 135 15, 195 45"/>
+      <polyline id="a->d" class="connection" points="15 82.5 75 75"/>
+      <polyline id="b->e" class="connection" points="15 112.5 75 105"/>
+      <polyline id="c->o" class="connection" points="15 142.5 195 180"/>
+      <polyline id="f->j" class="connection" points="150 60 195 75"/>
+      <polyline id="g->k" class="connection" points="150 90 195 105"/>
+      <polyline id="h->n" class="connection" points="150 120 195 150"/>
+      <polyline id="l->q" class="connection" points="270 60 315 82.5"/>
+      <polyline id="m->r" class="connection" points="270 90 315 112.5"/>
+      <polyline id="p->s" class="connection" points="270 165 315 142.5"/>
+
+      <use id="a" class="inport" x="15" y="82.5" xlink:href="#port"/>
+      <use id="b" class="inport" x="15" y="112.5" xlink:href="#port"/>
+      <use id="c" class="inport" x="15" y="142.5" xlink:href="#port"/>
+      <use id="q" class="outport" x="315" y="82.5" xlink:href="#port"/>
+      <use id="r" class="outport" x="315" y="112.5" xlink:href="#port"/>
+      <use id="s" class="outport" x="315" y="142.5" xlink:href="#port"/>
+
+      <rect id="N" class="module submodule" x="75" y="45" rx="7" ry="7" width="75" height="90"/>
+      <use id="d" class="inport" x="75" y="75" xlink:href="#port"/>
+      <use id="e" class="inport" x="75" y="105" xlink:href="#port"/>
+      <use id="f" class="outport" x="150" y="60" xlink:href="#port"/>
+      <use id="g" class="outport" x="150" y="90" xlink:href="#port"/>
+      <use id="h" class="outport" x="150" y="120" xlink:href="#port"/>
+
+      <rect id="P" class="module submodule" x="195" y="30" rx="7" ry="7" width="75" height="90"/>
+      <use id="i" class="inport" x="195" y="45" xlink:href="#port"/>
+      <use id="j" class="inport" x="195" y="75" xlink:href="#port"/>
+      <use id="k" class="inport" x="195" y="105" xlink:href="#port"/>
+      <use id="l" class="outport" x="270" y="60" xlink:href="#port"/>
+      <use id="m" class="outport" x="270" y="90" xlink:href="#port"/>
+
+      <rect id="Q" class="module submodule" x="195" y="135" rx="7" ry="7" width="75" height="60"/>
+      <use id="n" class="inport" x="195" y="150" xlink:href="#port"/>
+      <use id="o" class="inport" x="195" y="180" xlink:href="#port"/>
+      <use id="p" class="outport" x="270" y="165" xlink:href="#port"/>
+    </svg>
+  </div>
+  <div class="col-md-9 order-first">
+    <p>
+      CloudKeeper is a domain-specific language and runtime system for implementing and running dataflows on the Java Virtual Machine. Designed to facilitate “programming in the large”, CloudKeeper abstracts away concerns such as data transfer, serialization, scheduling, checkpointing, and package/dependency management. It requires at least Java 8 and uses <a href="https://akka.io">Akka Actors</a> for the distributed runtime system.
+    </p>
+    <p>
+      I originally designed and implemented CloudKeeper while at <a href="https://web.archive.org/web/20160111015137/http://lifecodehealth.com/">Lifecode</a>, a molecular-diagnostics startup that helped oncologists make treatment decisions for cancer patients. CloudKeeper was the core infrastructure piece at Lifecode, used by computational biologists to write genome-analysis workflows in a high-level, modular, and portable fashion.
+    </p>
+    <p>
+      See the <a href="https://cloudkeeper.xyz">CloudKeeper web site</a> for more information, including slide decks and examples (also note manuscript <a href="#S16">S16</a> below, which gives a formal description of CloudKeeper’s check-pointing algorithm).
+    </p>
+    <p class="links">
+      <a class="text-nowrap" href="https://cloudkeeper.xyz"><span class="icon link"></span>Web Site</a>
+      <span class="separator"></span>
+      <a class="text-nowrap" href="https://github.com/cloudkeeper-project"><span class="icon github"></span>GitHub</a>
+    </p>
+  </div>
+</div>
+
+<h3 id="madlib"><img src="https://madlib.apache.org/_media/logo-tricolor.png" alt="MADlib logo" width="69" height="41"> Apache MADlib (2010–2012)</h3>
+<div class="row">
+  <div class="col-md-3 align-self-center text-center mt-3 mt-md-0">
+    <svg id="madlib-figure" class="w-100 h-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245 360">
+      <defs>
+        <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+          <g>
+            <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+          </g>
+        </marker>
+      </defs>
+      <rect x="171" y="65" width="17" height="17" fill="#fc6" stroke="#ff8000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="171" y1="83" x2="171" y2="65" stroke="#804000" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="2"/>
+      <rect x="112" y="40" width="35" height="35" fill="#fc6" stroke="#ff8000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="20" y1="170" x2="20" y2="14.9" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="square" stroke-linejoin="miter" stroke-width="1"/>
+      <line x1="5" y1="154" x2="232.10036" y2="155.91646" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="square" stroke-linejoin="miter" stroke-width="1"/>
+      <line x1="10" y1="137" x2="242" y2="33" stroke="#66d82e" stroke-linecap="square" stroke-linejoin="miter" stroke-width="1"/>
+      <line x1="147" y1="75" x2="147" y2="40" stroke="#804000" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="2"/>
+      <line x1="10" y1="198" x2="140.00001" y2="279" stroke="black" stroke-linecap="square" stroke-linejoin="miter" stroke-width="1"/>
+      <line x1="140" y1="279" x2="144" y2="354" stroke="black" stroke-linecap="square" stroke-linejoin="miter" stroke-width="1"/>
+      <line x1="140" y1="279" x2="227" y2="253" stroke="black" stroke-linecap="square" stroke-linejoin="miter" stroke-width="1"/>
+      <rect x="174" y="45" width="13" height="13" fill="#fc6" stroke="#ff8000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="187" y1="58" x2="187" y2="45" stroke="#804000" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="2"/>
+      <path d="M 28 138 L 31.5 142 L 35 138 L 31.5 134 Z" fill="#c84243"/>
+      <path d="M 61 124.5 L 65 128 L 69 124.5 L 65 121 Z" fill="#c84243"/>
+      <path d="M 94 101 L 98 105 L 102 101 L 98 97 Z" fill="#c84243"/>
+      <path d="M 136 109.5 L 139.5 113 L 143 109.5 L 139.5 106 Z" fill="#c84243"/>
+      <path d="M 120 82.5 L 124 86 L 128 82.5 L 124 79 Z" fill="#c84243"/>
+      <path d="M 167 82.5 L 171 86 L 175 82.5 L 171 79 Z" fill="#c84243"/>
+      <path d="M 94 138 L 98 142 L 102 138 L 98 134 Z" fill="#c84243"/>
+      <path d="M 61 101 L 65 105 L 69 101 L 65 97 Z" fill="#c84243"/>
+      <path d="M 174 21 L 177.5 25 L 181 21 L 177.5 17 Z" fill="#c84243"/>
+      <path d="M 215 67 L 218.5 71 L 222 67 L 218.5 63 Z" fill="#c84243"/>
+      <path d="M 215 28 L 218.5 32 L 222 28 L 218.5 24 Z" fill="#c84243"/>
+      <path d="M 73 283 L 76.5 287 L 80 283 L 76.5 279 Z" fill="#c84243"/>
+      <path d="M 108 297 L 111.5 301 L 115 297 L 111.5 293 Z" fill="#c84243"/>
+      <path d="M 41 332.5 L 44.499953 336 L 48 332.5 L 44.499953 329 Z" fill="#c84243"/>
+      <path d="M 13 275.5 L 16.5 279 L 20 275.5 L 16.5 272 Z" fill="#c84243"/>
+      <path d="M 100 224.5 L 104 228 L 108 224.5 L 104 221 Z" fill="#c84243"/>
+      <path d="M 159 246 L 162.49995 250 L 166 246 L 162.49995 242 Z" fill="#c84243"/>
+      <path d="M 119 239 L 122.5 243 L 126 239 L 122.5 235 Z" fill="#c84243"/>
+      <path d="M 144 218 L 148 222 L 152 218 L 148 214 Z" fill="#c84243"/>
+      <path d="M 66 203.5 L 69.5 207 L 73 203.5 L 69.5 200 Z" fill="#c84243"/>
+      <path d="M 115 201 L 118.5 205 L 122 201 L 118.5 197 Z" fill="#c84243"/>
+      <path d="M 188 220 L 191.5 224 L 195 220 L 191.5 216 Z" fill="#c84243"/>
+      <path d="M 89 345 L 92.5 349 L 96 345 L 92.5 341 Z" fill="#c84243"/>
+      <path d="M 55 306 L 58.5 310 L 62 306 L 58.5 302 Z" fill="#c84243"/>
+      <path d="M 23 307 L 26.5 311 L 30 307 L 26.5 303 Z" fill="#c84243"/>
+      <path d="M 36 258.5 L 39.5 262 L 43 258.5 L 39.5 255 Z" fill="#c84243"/>
+      <path d="M 94 316 L 97.5 320 L 101 316 L 97.5 312 Z" fill="#c84243"/>
+      <path d="M 185 291 L 188.5 295 L 192 291 L 188.5 287 Z" fill="#c84243"/>
+      <path d="M 169 314.5 L 172.5 318 L 176 314.5 L 172.5 311 Z" fill="#c84243"/>
+      <path d="M 201 314.5 L 204.5 318 L 208 314.5 L 204.5 311 Z" fill="#c84243"/>
+      <path d="M 144 39.5 L 147.5 43 L 151 39.5 L 147.5 36 Z" fill="#c84243"/>
+      <path d="M 183 44.5 L 187 48 L 191 44.5 L 187 41 Z" fill="#c84243"/>
+    </svg>
+  </div>
+  <div class="col-md-9 order-first">
+    <p>
+      MADlib is an open-source library for running machine-learning algorithms at scale within relational databases such as PostgreSQL and Greenplum. I co-started the project after joining Greenplum in 2010 (now <a href="https://pivotal.io">Pivotal</a>) and was the MADlib lead engineer. MADlib is written in C, C++, Python, and SQL.
+    </p>
+    <p>
+      One of my main contributions to MADlib included designing and writing a C++ layer that eases the burden of writing high-performance user-defined function (UDFs) and that encapsulates DBMS-specific logic inside the abstraction layer. In brief, the MADlib C++ abstraction provides three classes of functionality: type bridging, resource management shims, and math library integration. See the MADlib design document (publication <a href="#M12">M12</a> below) and chapters 3 and 4 in “The MADlib Analytics Library” (publication <a href="#HRSW+12">HRSW+12</a> below) for more information.
+    </p>
+    <p>
+      Using the abstraction layer, I implemented core algorithms such as linear/logistic regression, <em>k</em>-means, random sampling, statistical tests, etc. I also owned other essential parts of the project, including the build system, continuous integration, release management, and documentation (using a <a href="https://github.com/apache/madlib/tree/rel/v1.16/doc/src">custom SQL parser</a> for Doxygen, which I wrote in flex and bison). In order to formally document the machine-learning algorithms implemented in MADlib, I started the design document (manuscript <a href="#M12">M12</a> below).
+    </p>
+    <p>
+      MADlib <a href="http://incubator.apache.org/projects/madlib.html">graduated to an Apache top-level project in 2017</a>.
+    </p>
+    <p class="links">
+      <a class="text-nowrap" href="https://projects.apache.org/project.html?madlib"><span class="icon link"></span>Apache Project Information</a>
+      <span class="separator"></span>
+      <a class="text-nowrap" href="https://github.com/apache/madlib"><span class="icon github"></span>GitHub (official)</a>
+      <span class="separator"></span>
+      <a class="text-nowrap" href="https://github.com/fschopp/madlib"><span class="icon github"></span>GitHub (my old fork)</a>
+    </p>
+  </div>
+</div>
+
+<h2>Proprietary Software</h2>
+<h3 id="latin"><img src="/assets/img/latein-woerterbuch-logo.png" alt="Latein-Wörterbuch logo" width="48" height="48"> Latin-German Dictionary (1998–2009)</h3>
+<div class="row">
+  <div class="col-md-4 align-self-center text-center mt-3 mt-md-0">
+    <img id="latin-screenshot" class="w-100 h-auto" src="/assets/img/latein-woerterbuch.png" alt="Latein-Wörterbuch screenshot" />
+  </div>
+  <div class="col-md-8 order-first">
+    <p>
+      The Latin-German dictionary is indispensable when searching for words and when translating Latin writings into German. It allows to instantly look up entries in all conjugated/declined forms, in order to obtain the base form and its translation. In total, the software can recognize almost one million distinct word forms stemming (pun intended) from over 11,000 dictionary entries. For each base form, it can also show overviews of all inflected forms.
+    </p>
+    <p>
+      I started developing the Latin-German dictionary while in 10th grade in high school and released the first version in 1998. Over the years, the software found more than 2,000 paying customers. Today, it is available as freeware.
+    </p>
+    <p>
+      I implemented the Latin-German dictionary in C++, using initially the <a href="https://en.wikipedia.org/wiki/PowerPlant">PowerPlant</a> framework for the Mac version (those glorious 1990’s!) and the <a href="https://en.wikipedia.org/wiki/Microsoft_Foundation_Class_Library">Microsoft Foundation Classes</a> for the Windows version. After the advent of Mac OS X, I rewrote the user interface code of the Mac version in <a href="https://en.wikipedia.org/wiki/Objective-C">Objective-C</a>.
+    </p>
+    <p class="links">
+      <a class="text-nowrap" href="http://latein-woerterbuch.de"><span class="icon link"></span>Web Site</a>
+    </p>
+  </div>
+</div>
+
+<h3>Others (1998-2007)</h3>
+<div class="row">
+  <div class="col-md-4 align-self-center text-center mt-3 mt-md-0">
+    <img id="wincowas-screenshot" class="w-100 h-auto" src="/assets/img/wincowas.png" alt="WinCOWAS screenshot" />
+  </div>
+  <div class="col-md-8 order-first">
+    <p>
+      I developed an inventory control system called “WinCOWAS” (German for “computergestütztes Warenwirtschaftssystem”), tailored and simplified for educational use. From 1999 to the mid-2000’s, I sold this software to vocational schools. It was later acquired by the <a href="https://www.europa-lehrmittel.de">Europa-Lehrmittel Verlag</a> and became part of text books (see, e.g., <a href="http://www.worldcat.org/oclc/723723259">this book from 2007</a> or <a href="http://www.worldcat.org/oclc/943762233">this from 2016</a>). I also developed a likewise simplified accounting software for education purposes, called “WinCOBUS”. I discontinued distribution and development of this software.
+    </p>
+  </div>
+</div>
+
+<h1 id="publications">Publications</h1>
+
+<h2 id="peer-reviewed">Peer-Reviewed</h2>
+
+<table class="table table-striped navadjust">
+  <!-- 2015 -->
+  <tr>
+    <td><p id="RS15">RS15</p></td>
+    <td>
+      <p>
+      Tim Roughgarden and Florian Schoppmann: <strong>Local Smoothness and the Price of Anarchy in Atomic Splittable Congestion Games</strong>. In: <em>Journal of Economic Theory</em>. Volume 156, March 2015. Pages 317–342.
+      </p>
+      <p>
+        Supersedes conference version (<a href="#RS11">RS11</a>).
+      </p>
+      <a class="text-nowrap" href="/assets/docs/2014-02-local-smoothness-jet.pdf"><span class="icon document"></span>Article</a>
+      <span class="separator"></span>
+      <a class="text-nowrap" href="https://doi.org/10.1016/j.jet.2014.04.005"><span class="icon doi"></span>DOI</a>
+    </td>
+  </tr>
+
+  <!-- 2012 -->
+  <tr>
+    <td><p id="HRSW+12">HRSW+12</p></td>
+    <td>
+      <p>
+        Joe Hellerstein, Christopher Ré, Florian Schoppmann, Daisy Zhe Wang, Eugene Fratkin, Aleksander Gorajek, Kee Siong Ng, Caleb Welton, Xixuan Feng, Kun Li, Arun Kumar: <strong>The MADlib Analytics Library (or MAD Skills the SQL)</strong>. In: <em>Proceedings of the 38th Very Large Data Bases Endowment (VLDB’12)</em>.
+      </p>
+      <p>
+        My part of the VLDB talk were slides 10–23 (corresponding to chapters&nbsp;3 and 4 in the paper).
+      </p>
+      <a class="text-nowrap" href="http://vldb.org/pvldb/vol5/p1700_joehellerstein_vldb2012.pdf"><span class="icon document"></span>Article</a>
+      <span class="separator"></span>
+      <a class="text-nowrap" href="/assets/docs/2012-madlib-vldb.pdf"><span class="icon slides"></span>Slides</a>
+      <span class="separator"></span>
+      <a class="text-nowrap" href="https://doi.org/10.14778/2367502.2367510"><span class="icon doi"></span>DOI</a>
+    </td>
+  </tr>
+
+  <!-- 2011 -->
+  <tr>
+    <td><p id="ADGMS11">ADGMS11</p></td>
+    <td>
+      <p>
+      Sebastian Aland, Dominic Dumrauf, Martin Gairing, Burkhard Monien, and Florian Schoppmann: <strong>Exact Price of Anarchy for Polynomial Congestion Games</strong>. In: <em>SIAM Journal on Computing</em>. Volume 40, Issue 5, 15 September 2011. Pages 1211–1233.
+      </p>
+      <p>
+        Supersedes conference version (<a href="#ADGMS06">ADGMS06</a>).
+      </p>
+      <a class="text-nowrap" href="http://homepages.upb.de/fschopp/publications/ExactPoA_extended.pdf"><span class="icon document"></span>Article</a>
+      <span class="separator"></span>
+      <a class="text-nowrap" href="https://doi.org/10.1137/090748986"><span class="icon doi"></span>DOI</a>
+    </td>
+  </tr>
+  <tr>
+    <td><p id="RS11">RS11</p></td>
+    <td>
+      <p>
+        Tim Roughgarden and Florian Schoppmann: <strong>Local Smoothness and the Price of Anarchy in Atomic Splittable Congestion Games</strong>. In: <em>Proceedings of the 22th Annual ACM-SIAM Symposium on Discrete Algorithms (SODA’11)</em>.
+      </p>
+      <p>
+        Superseded by extended version (<a href="#RS15">RS15</a>).
+      </p>
+      <a class="text-nowrap" href="http://homepages.upb.de/fschopp/publications/PoAInAtomicSplitCGs.pdf"><span class="icon document"></span>Article</a>
+      <span class="separator"></span>
+      <a class="text-nowrap" href="http://homepages.upb.de/fschopp/slides/PoAInAtomicSplitCGs.pdf"><span class="icon slides"></span>Slides</a>
+      <span class="separator"></span>
+      <a class="text-nowrap" href="https://doi.org/10.1137/1.9781611973082.22"><span class="icon doi"></span>DOI</a>
+    </td>
+  </tr>
+
+
+  <!-- 2009 -->
+  <tr>
+    <td><p id="PSSW09">PSSW09</p></td>
+    <td>
+      <p>
+        Paolo Penna, Florian Schoppmann, Riccardo Silvestri, and Peter Widmayer: <strong>Pseudonyms in cost-sharing games</strong>. In: <em>Proceedings of the 5th International Workshop on Internet and Network Economics (WINE’09)</em>.
+      </p>
+      <a class="text-nowrap" href="http://homepages.upb.de/fschopp/publications/PseudonymsInCostSharing.pdf"><span class="icon document"></span>Article</a>
+      <span class="separator"></span>
+      <a class="text-nowrap" href="http://homepages.upb.de/fschopp/slides/PseudonymsInCostSharing.pdf"><span class="icon slides"></span>Slides</a>
+      <span class="separator"></span>
+      <a class="text-nowrap" href="https://doi.org/10.1007/978-3-642-10841-9_24"><span class="icon doi"></span>DOI</a>
+    </td>
+  </tr>
+
+  <!-- 2008 -->
+  <tr>
+    <td><p id="S08">S08</p></td>
+    <td>
+      <p>
+        Florian Schoppmann: <strong>The Power of Small Coalitions in Cost Sharing</strong>. In: <em>Proceedings of the 4th International Workshop on Internet and Network Economics (WINE’08)</em>.
+      </p>
+      <a class="text-nowrap" href="http://homepages.upb.de/fschopp/publications/SmallCoalitionsInCostSharing.pdf"><span class="icon document"></span>Article</a>
+      <span class="separator"></span>
+      <a class="text-nowrap" href="http://homepages.upb.de/fschopp/slides/SmallCoalitionsInCostSharing.pdf"><span class="icon slides"></span>Slides</a>
+      <span class="separator"></span>
+      <a class="text-nowrap" href="https://doi.org/10.1007/978-3-540-92185-1_72"><span class="icon doi"></span>DOI</a>
+    </td>
+  </tr>
+  <tr>
+    <td><p id="MMPS08">MMPS08</p></td>
+    <td>
+      <p>
+        Marios Mavronicolas, Burkhard Monien, Vicky G. Papadopoulou, and Florian Schoppmann: <strong>Voronoi Games on Cycle Graphs</strong>. In: <em>Processings of the 33rd International Symposium on Mathematical Foundations of Computer Science (MFCS’08)</em>.
+      </p>
+      <a class="text-nowrap" href="http://homepages.upb.de/fschopp/publications/VoronoiGamesOnCycleGraphs.pdf"><span class="icon document"></span>Article</a>
+      <span class="separator"></span>
+      <a class="text-nowrap" href="http://homepages.upb.de/fschopp/slides/VoronoiGamesOnCycleGraphs.pdf"><span class="icon slides"></span>Slides</a>
+      <span class="separator"></span>
+      <a class="text-nowrap" href="https://doi.org/10.1007/978-3-540-85238-4_41"><span class="icon doi"></span>DOI</a>
+    </td>
+  </tr>
+  <tr>
+    <td><p id="BS08b">BS08b</p></td>
+    <td>
+      <p>
+        Yvonne Bleischwitz and Florian Schoppmann: <strong>Group-Strategyproof Cost Sharing for Metric Fault Tolerant Facility Location</strong>. In: <em>Proceedings of the 1st International Symposium on Algorithmic Game Theory (SAGT’08)</em>.
+      </p>
+      <a class="text-nowrap" href="http://homepages.upb.de/fschopp/publications/GSPCostSharingForMetricFaultTolerantFacilityLocation.pdf"><span class="icon document"></span>Article</a>
+      <span class="separator"></span>
+      <a class="text-nowrap" href="https://doi.org/10.1007/978-3-540-79309-0_31"><span class="icon doi"></span>DOI</a>
+    </td>
+  </tr>
+  <tr>
+    <td><p id="BS08a">BS08a</p></td>
+    <td>
+      <p>
+        Yvonne Bleischwitz and Florian Schoppmann: <strong>New Efficiency Results for Makespan Cost Sharing</strong>. In: <em>Information Processing Letters</em>. Volume 107, Issue 2, 16 July 2008. Pages 64&ndash;70. Elsevier B.V.
+      </p>
+      <a class="text-nowrap" href="http://homepages.upb.de/fschopp/publications/NewEfficiencyResultsForMakespanCostSharing.pdf"><span class="icon document"></span>Article</a>
+      <span class="separator"></span>
+      <a class="text-nowrap" href="https://doi.org/10.1016/j.ipl.2008.01.005"><span class="icon doi"></span>DOI</a>
+    </td>
+  </tr>
+
+  <!-- 2007 -->
+  <tr>
+    <td><p id="BMS07">BMS07</p></td>
+    <td>
+      <p>
+        Yvonne Bleischwitz, Burkhard Monien, and Florian Schoppmann: <strong>To be or not to be (served)</strong>. In: <em>Proceedings of the 3rd International Workshop On Internet and Network Economics (WINE’07)</em>.
+      </p>
+      <p>
+        Superseded by extended manuscript (<a href="#BMS10">BMS10</a>).
+      </p>
+      <a class="text-nowrap" href="http://homepages.upb.de/fschopp/publications/ToBeOrNotToBeServed.pdf"><span class="icon document"></span>Article</a>
+      <span class="separator"></span>
+      <a class="text-nowrap" href="https://doi.org/10.1007/978-3-540-77105-0_55"><span class="icon doi"></span>DOI</a>
+    </td>
+  </tr>
+  <tr>
+    <td><p id="GS07">GS07</p></td>
+    <td>
+      <p>
+        Martin Gairing and Florian Schoppmann: <strong>Total Latency in Singleton Congestion Games</strong>. In: <em>Proceedings of the 3rd International Workshop On Internet And Network Economics (WINE’07)</em>.
+      </p>
+      <a class="text-nowrap" href="http://homepages.upb.de/fschopp/publications/TotalLatencyInSingletonCGs.pdf"><span class="icon document"></span>Article</a>
+      <span class="separator"></span>
+      <a class="text-nowrap" href="http://homepages.upb.de/fschopp/slides/TotalLatencyInSingletonCGs.pdf"><span class="icon slides"></span>Slides</a>
+      <span class="separator"></span>
+      <a class="text-nowrap" href="https://doi.org/10.1007/978-3-540-77105-0_42"><span class="icon doi"></span>DOI</a>
+    </td>
+  </tr>
+  <tr>
+    <td><p id="BMST07">BMST07</p></td>
+    <td>
+      <p>
+        Yvonne Bleischwitz, Burkhard Monien, Florian Schoppmann, and Karsten Tiemann: <strong>The Power of Two Prices: Beyond Cross-Monotonicity</strong>. In: <em>Proceedings of the 32nd International Symposium on Mathematical Foundation of Computer Science (MFCS’07)</em>.
+      </p>
+      <p>
+        Superseded by extended manuscript (<a href="#BMST09">BMST09</a>).
+      </p>
+      <a class="text-nowrap" href="http://homepages.upb.de/fschopp/publications/ThePowerOfTwoPrices.pdf"><span class="icon document"></span>Article</a>
+      <span class="separator"></span>
+      <a class="text-nowrap" href="http://homepages.upb.de/fschopp/slides/ThePowerOfTwoPrices.pdf"><span class="icon slides"></span>Slides</a>
+      <span class="separator"></span>
+      <a class="text-nowrap" href="https://doi.org/10.1007/978-3-540-74456-6_58"><span class="icon doi"></span>DOI</a>
+    </td>
+  </tr>
+
+  <!-- 2006 -->
+  <tr>
+    <td><p id="MMST06">MMST06</p></td>
+    <td>
+      <p>
+        Vladimir Mazalov, Burkhard Monien, Florian Schoppmann, and Karsten Tiemann: <strong>Wardrop Equilibria and Price of Stability for Bottleneck Games with Splittable Traffic</strong>. In: <em>Proceedings of the 2nd Workshop on Internet and Network Economics (WINE’06)</em>.
+      </p>
+      <a class="text-nowrap" href="http://homepages.upb.de/fschopp/publications/WEAndPoAForBottleneckGames.pdf"><span class="icon document"></span>Article</a>
+      <span class="separator"></span>
+      <a class="text-nowrap" href="http://homepages.upb.de/fschopp/slides/WEAndPoAForBottleneckGames.pdf"><span class="icon slides"></span>Slides</a>
+      <span class="separator"></span>
+      <a class="text-nowrap" href="https://doi.org/10.1007/11944874_30"><span class="icon doi"></span>DOI</a>
+    </td>
+  </tr>
+  <tr>
+    <td><p id="ADGMS06">ADGMS06</p></td>
+    <td>
+      <p>
+        Sebastian Aland, Dominic Dumrauf, Martin Gairing, Burkhard Monien, and Florian Schoppmann: <strong>Exact Price of Anarchy for Polynomial Congestion Games</strong>. In: <em>Proceedings of the 23rd International Symposium on Theoretical Aspects of Computer Science (STACS’06)</em>.
+      </p>
+      <p>
+        Superseded by extended version (<a href="#ADGMS11">ADGMS11</a>).
+      </p>
+      <a class="text-nowrap" href="http://homepages.upb.de/fschopp/publications/ExactPoA.pdf"><span class="icon document"></span>Article</a>
+      <span class="separator"></span>
+      <a class="text-nowrap" href="https://doi.org/10.1007/11672142_17"><span class="icon doi"></span>DOI</a>
+    </td>
+  </tr>
+</table>
+
+
+<h2 id="manuscripts">Manuscripts</h2>
+<p>
+  The following articles contain original and novel work but are so far unpublished in this form.
+</p>
+<table class="table table-striped">
+  <!-- 2016 -->
+  <tr>
+    <td><p id="S16">S16</p></td>
+    <td>
+      <p>
+        Florian Schoppmann: <strong>The CloudKeeper dataflow language and runtime system</strong>, January 2016.
+      </p>
+      <p>
+      This document (currently) gives a description of the interpreter component, including a formal proof of the check-pointing algorithm. To be extended into a full article about all aspects of CloudKeeper.
+      </p>
+      <a class="text-nowrap" href="/assets/docs/2016-01-cloudkeeper.pdf"><span class="icon document"></span>Document</a>
+    </td>
+  </tr>
+
+  <!-- 2012 -->
+  <tr>
+    <td><p id="M12">M12</p></td>
+    <td>
+      <p>
+        The MADlib project (multiple authors): <strong>MADlib Design Document</strong>, my contributions from 2012.
+      </p>
+      <p>
+        The design document gives technical details about architecture decisions as well as mathematical details about implemented machine-learning algorithms. While leading the MADlib project (see <a href="#madlib">above</a>), I started the design document in order to ensure formal correctness in mathematical code.
+      </p>
+      <a class="text-nowrap" href="http://madlib.net/design.pdf"><span class="icon document"></span>Document</a>
+    </td>
+  </tr>
+
+  <!-- 2010 -->
+  <tr>
+    <td><p id="S10">S10</p></td>
+    <td>
+      <p>
+        Florian Schoppmann: <strong>Generalizing the Smoothness framework</strong>, June 2010.
+      </p>
+      <p>
+        The purpose of this note is to further generalize the smoothness framework introduced in <a href="https://doi.org/10.1145/1536414.1536485">“Intrinsic robustness of the price of anarchy”</a> (Roughgarden, 2009), in order to provide a unified proof for many existing price-of-anarchy results.
+      </p>
+      <a class="text-nowrap" href="/assets/docs/2010-06-smoothness.pdf"><span class="icon document"></span>Document</a>
+    </td>
+  </tr>
+  <tr>
+    <td><p id="BMS10">BMS10</p></td>
+    <td>
+      <p>
+        Yvonne Bleischwitz, Burkhard Monien, and Florian Schoppmann: <strong>To Be or Not to Be (Served): Cost-Sharing Without Indifferences</strong>, March 2010.
+      </p>
+      <p>
+        Supersedes conference version (<a href="#BMS07">BMS07</a>). Roughly equivalent to chapter&nbsp;4 of my Ph.D. thesis (<a href="#S09">S09</a>).
+      </p>
+      <a class="text-nowrap" href="http://homepages.upb.de/fschopp/publications/ToBeOrNotToBeServed_extended.pdf"><span class="icon document"></span>Document</a>
+    </td>
+  </tr>
+
+  <!-- 2009 -->
+  <tr>
+    <td><p id="BMST09">BMST09</p></td>
+    <td>
+      <p>
+        Yvonne Bleischwitz, Burkhard Monien, Florian Schoppmann, and Karsten Tiemann: <strong>The Power of Lexicographic Maximization: Beyond Cross-Monotonicity</strong>, August 2009.
+      </p>
+      <p>
+        Supersedes conference version (<a href="#BMST07">BMST07</a>). Roughly equivalent to chapter&nbsp;3 of my Ph.D. thesis (<a href="#S09">S09</a>).
+      </p>
+      <a class="text-nowrap" href="http://homepages.upb.de/fschopp/publications/LexicographicMaximization_extended.pdf"><span class="icon document"></span>Document</a>
+    </td>
+  </tr>
+</table>
+
+<h2 id="notes">Technical Notes and Informal Talks</h2>
+<p>
+  The following notes and slides provide introductions, summaries, simplified proofs, and opinions.
+</p>
+<ul class="table-list">
+  <li>
+    <p>
+      <strong>Dynamic Programming and Sequence Alignment</strong>, March 2015.
+    </p>
+    <p>
+      I was invited to give a talk at Lowell High School, San Francisco, and decided to give students an idea of a university-level computer-science class, real-world applications of algorithms, and career paths in computer science.
+  </p>
+    <a class="text-nowrap" href="/assets/docs/2015-03-dynamic-programming.pdf"><span class="icon slides"></span>Slides</a>
+  </li>
+  <li>
+    <p>
+      <strong>Parallel <em>k</em>-Means in Theory and Practice</strong>, August 2012.
+    </p>
+    <p>
+      I gave this informal talk to coworkers at Greenplum to explain how I had implemented <em>k</em>-Means in the MADlib open-source library and how this implementation could be improved. My personal notes go beyond that and summarize the key results from the papers <a href="http://dl.acm.org/citation.cfm?id=1283383.1283494">“k-means++: The Advantages of Careful Seeding”</a> (Arthur and Vassilvitskii, 2007) and <a href="https://doi.org/10.14778/2180912.2180915">“Scalable K-Means++”</a> (Bahmani et al., 2012).
+    </p>
+    <a class="text-nowrap" href="/assets/docs/2012-08-k-means.pdf"><span class="icon notes"></span>Notes</a>
+    <span class="separator"></span>
+    <a class="text-nowrap" href="/assets/docs/2012-08-k-means-slides.pdf"><span class="icon slides"></span>Slides</a>
+  </li>
+  <li>
+    <p>
+      <strong>Random Sampling</strong>, August 2010.
+    </p>
+    <p>
+      I gave this talk during a job interview at Greenplum after being told that random sampling in the Greenplum database required workarounds that were not performing up to the expectation.
+    </p>
+    <a class="text-nowrap" href="/assets/docs/2012-08-random-sampling.pdf"><span class="icon notes"></span>Notes</a>
+      <span class="separator"></span>
+    <a class="text-nowrap" href="/assets/docs/2012-08-random-sampling-slides.pdf"><span class="icon slides"></span>Slides</a>
+  </li>
+  <li>
+    <p>
+      <strong>Differential Privacy</strong>, March 2010.
+    </p>
+    <p>
+      I presented <a href="https://doi.org/10.1007/978-3-540-79228-4_1">“Differential Privacy: A Survey of Results”</a> (Dwork, 2008) in the <a href="https://cs.stanford.edu/wiki/theory-reading/Main/HomePage">Stanford Theory reading group</a>.
+    </p>
+    <a class="text-nowrap" href="/assets/docs/2012-03-differential-privacy.pdf"><span class="icon notes"></span>Notes</a>
+  </li>
+  <li>
+    <p>
+      <strong>The Multiplicative Weights Update Method</strong>, February 2010.
+    </p>
+    <p>
+      I presented (a preliminary version of) the paper <a href="https://doi.org/10.4086/toc.2012.v008a006">“The Multiplicative Weights Update Method: A Meta Algorithm and its Applications”</a> (Arora et al., 2012) in the Stanford Theory group.
+    </p>
+    <a class="text-nowrap" href="/assets/docs/2012-02-multiplicative-weights.pdf"><span class="icon notes"></span>Notes</a>
+  </li>
+  <li>
+    <p>
+      <strong>Uniqueness of Nash equilibria in atomic splittable congestion games</strong>, September 2009
+    </p>
+    <p>
+      These notes give a more explicit proof of the uniqueness result in the paper <a href="https://doi.org/10.1109/9.981725">“Competitive routing in networks with polynomial costs”</a> by Altman et al. (2002).
+    </p>
+    <a class="text-nowrap" href="/assets/docs/2009-09-atomic-splittable-cgs-unique-ne.pdf"><span class="icon notes"></span>Notes</a>
+  </li>
+  <li>
+    <p>
+      <strong>Cost Sharing (a small and biased summary of results)</strong>, June 2009
+    </p>
+    <p>
+      These notes summarize some results in the area of mechanism design and <a href="#cost-sharing">cost sharing</a>, the topic of my <a href="#theses">Ph.D. thesis</a>.
+    </p>
+    <a class="text-nowrap" href="/assets/docs/2009-06-cost-sharing.pdf"><span class="icon notes"></span>Notes</a>
+  </li>
+</ul>
+
+
+
+<h1 id="research">Academic Research (2006–2010)</h1>
+<p>
+  Present-day information and communication technologies crucially rely on large-scale networks that are created and maintained by a huge number of autonomous players with heterogeneous goals. Evidently, this includes the Internet as the most prominent example, but no less also peer-to-peer, logistics, and social networks. Research on (distributed) algorithms has responded to the rapid emergence of these new decentralised networks by a corresponding paradigm shift: Starting shortly before the new millennium, computer scientists have been increasingly focusing on optimization in networks where the self-interested players’ behaviour cannot be directly controlled (<a href="https://doi.org/10.1006/game.1999.0790">Nisan and Ronen, 2001</a>; <a href="https://doi.org/10.1016/j.cosrev.2009.04.003">Koutsoupias and Papadimitriou, 2009</a>; <a href="https://doi.org/10.1145/380752.380883">Papadimitriou, 2001</a>). The lack of central coordination ensuing from players’ self-interested behavior is instead regarded as an inevitable constraint, similar to the lack of computing power when devising approximation algorithms or the lack of information about the future when designing online algorithms.
+</p>
+<p>
+  Located at the intersection of computer science with mathematics and economics, this field of research is known today as <em>algorithmic game theory</em>. Bringing together algorithms and game theory has given rise to several important questions that were not rigorously considered before: Can the loss due to selfish behaviour be quantified? In a more catchy term: What is the “price of anarchy”? What is the complexity to compute stable states (“equilibria”) or approximations of them? How should new systems be designed in order to give players an <em>incentive</em> to act in a particular fashion? How can the “right” incentives be reconciled with computational tractability? The following sections briefly outline three topics from my research in algorithmic game theory.
+</p>
+
+<h2 id="cost-sharing">Cost Sharing</h2>
+<p>
+  In a cost-sharing problem, finitely many players have an unknown valuation for some <a href="https://en.wikipedia.org/wiki/Rivalry_%28economics%29">non-rivalrous</a> but <a href="https://en.wikipedia.org/wiki/Excludability">excludable</a> service (e.g., network connectivity). The challenge is to design mechanisms that elicit truthful reports of the players’ valuations, determine which set of players <i>Q</i> to serve, and decide how to distribute the incurred service cost <i>C</i>(<i>Q</i>). Providing players with an incentive to reveal truthful information is key, because it removes the possibility to game the system. Further constraints for cost-sharing problems include budget balance (i.e., recovery of the service cost with the prices charged) and economic efficiency (i.e., a reasonable trade-off between the service cost and the excluded players’ valuations). Practical applications moreover require that the outcome of cost-sharing mechanisms be computable in polynomial time.
+</p>
+<p>
+  Cost-sharing problems are fundamental in economics and have a broad area of applications; e.g., distributing volume discounts in electronic commerce, sharing the cost of public infrastructure projects, allocating development costs of low-volume built-to-order products, etc. Despite this fundamental nature, general techniques for solving cost-sharing problems used to be rare. When requiring <em>group-strategyproofness</em> – meaning that not even coordinated manipulation must ever be profitable – essentially only one technique was known, due to <a href="https://doi.org/10.1007/s003550050145">Moulin (1999)</a>. Unfortunately, there are several natural cost-sharing problems for which any Moulin mechanism inevitably suffers poor budget balance and economic efficiency (<a href="https://doi.org/10.1145/1361192.1361201">Immorlica et al., 2008</a>).
+</p>
+<p>
+  My research in this area therefore focused on finding alternative general techniques that perform better than Moulin mechanisms (<a href="#BMST07">BMST07</a>, <a href="#BMS07">BMS07</a>), on characterising the inherent limitations of group-strategyproofness with respect to the other desirable properties of cost-sharing mechanisms (<a href="#BMST07">BMST07</a>, <a href="#BS08b">BS08b</a>, <a href="#S08">S08</a>), on investigating new incentive-compatibility desiderata that arise particularly in large anonymous settings (<a href="#PSSW09">PSSW09</a>), and on extending the cost-sharing model to a more general fault-tolerant setting where players may have demand for multiple levels of service (<a href="#BS08b">BS08b</a>).
+</p>
+
+<h2>Self-Interested Resource Usage</h2>
+<p>
+  So-called <a href="https://en.wikipedia.org/wiki/Congestion_game"><em>congestion games</em></a> play a central role for modeling self-interested resource usage. There is a ground set of resources, and each player selects a subset of them. For concreteness, we assume here that resources are edges in a network, and each player needs to route traffic from some source to a destination node. A natural behavioral assumption is that each player simply chooses the fastest route when taking into account the current network congestion – while being oblivious to the effect her own action has on the system. In fact, similar models have already been considered in the 1950’s in the context of road traffic. Today, selfish routing models gain further motivation from the necessity of efficient routing protocols in the Internet, in logistics networks, etc.
+</p>
+<p>
+  My research in this area primarily focused on quantifying the loss due to selfishness. In two works (<a href="#ADGMS06">ADGMS06</a>, <a href="#GS07">GS07</a>), we considered a model with players who each have a non-negligible effect on the system. For the case that the travel time over each edge is described by a polynomial of the total traffic on this edge, we gave exact values for the price of anarchy. In a different work (<a href="#MMST06">MMST06</a>), we considered a selfish routing scenario where not the total travel time (e.g., of data packets) is an issue but much more the throughput. The latter is clearly a question of the bottleneck, i.e., the most congested edge on a path. We gave results on the minimum loss any equilibrium inevitably incurs, together with a characterisation of special network topologies (series-parallel graphs).
+</p>
+<p>
+  We also precisely determined the price of anarchy for the case when players can arbitrarily split their traffic over several routes (<a href="#RS11">RS11</a>) – a problem that had been open for several years (see, e.g., <a href="http://www.cambridge.org/us/academic/subjects/computer-science/algorithmics-complexity-computer-algebra-and-computational-g/algorithmic-game-theory">“Algorithmic Game Theory”, chapter 18, 2007</a>).
+</p>
+
+<h2>Competitive Location</h2>
+<p>
+  Competitive location games provide simple scenarios of competitive sellers: The market is modeled as some metric measurable space, and a seller’s market share is assumed to be proportional to the measure of the points that are closer to it than to any other seller. How will the sellers behave in order to maximise their market shares? There is a huge body of literature on location theory (<a href="https://doi.org/10.1287/trsc.27.1.44">Eiselt et al., 1993</a>), with contributions also from operations researchers, geographers, political scientist etc. However, articles dealing with <em>discrete</em> location models – such as graphs – are rare.
+</p>
+<p>
+  Motivated by applications in computer networks, my research on competitive location made some first steps towards understanding discrete models: We considered competitive location games on cycle graphs and give a comprehensive examination of their equilibria. This then allowed us to also determine the exact price of anarchy (<a href="#MMPS08">MMPS08</a>).
+</p>
+
+
+
+<h1 id="education">Education</h1>
+<p>
+  From 2006–2009, I was a Ph.D. student at the <a href="http://graduateschool.uni-paderborn.de/">International Graduate School <em>Dynamic Intelligent Systems</em></a>. Before that, from 2001–2005, I studied computer science, with mathematics as minor subject, at the <a href="http://www.uni-paderborn.de">University of Paderborn</a>.
+</p>
+
+<h2 id="theses">Theses</h2>
+<table class="table table-striped">
+  <tr>
+    <td><p id="S09">S09</p></td>
+    <td>
+      <p>
+        <strong>Collusion-Resistant Cost-Sharing Mechanisms: Design Techniques, Analyses, Trade-Offs</strong>. Ph.D. thesis. University of Paderborn, Germany, June 2009.
+      </p>
+      <a class="text-nowrap" href="http://d-nb.info/995451540/34"><span class="icon document"></span>Thesis</a>
+      <span class="separator"></span>
+      <a class="text-nowrap" href="http://homepages.upb.de/fschopp/slides/DissertationFlorianSchoppmann.pdf"><span class="icon slides"></span>Slides</a>
+      <span class="separator"></span>
+      <a class="text-nowrap" href="http://nbn-resolving.de/urn:nbn:de:hbz:466-20090708015"><span class="icon link"></span>URN:NBN</a>
+    </td>
+  </tr>
+  <tr id="S05b">
+    <td>S05b</td>
+    <td>
+      <p>
+        <strong>Price of Anarchy for Congestion Games with Polynomial Latency Functions</strong>. Diploma thesis (Diplomarbeit). University of Paderborn, Germany, December 2005.
+      </p>
+      <p>
+        I was awarded the <a href="https://www.eim.uni-paderborn.de/fileadmin/fakultaet/Fakultaet/UEber_die_Fakultaet/Jahresberichte/Jahresbericht_2007.pdf">prize of the computer-science department</a> for the best Diplom (first among <a href="http://digital.ub.uni-paderborn.de/download/pdf/1234847?name=2007">76 graduates</a> during the academic year 10/2005–09/2006).
+      </p>
+      <a class="text-nowrap" href="http://homepages.upb.de/fschopp/publications/DiplomarbeitFlorianSchoppmann.pdf"><span class="icon document"></span>Thesis</a>
+      <span class="separator"></span>
+      <a class="text-nowrap" href="http://homepages.upb.de/fschopp/slides/DiplomarbeitFlorianSchoppmann.pdf"><span class="icon slides"></span>Slides</a>
+    </td>
+  </tr>
+  <tr>
+    <td><p id="S05a">S05a</p></td>
+    <td>
+      <p>
+        <strong>Online Occlusion Culling</strong>. Bachelor’s thesis. University of Paderborn, Germany, January 2005.
+      </p>
+      <a class="text-nowrap" href="http://homepages.uni-paderborn.de/fschopp/hauptstudium/docs/bachelorarbeit.pdf"><span class="icon document"></span>Thesis</a>
+      <span class="separator"></span>
+      <a class="text-nowrap" href="http://homepages.uni-paderborn.de/fschopp/hauptstudium/docs/bachelorarbeitfolien.pdf"><span class="icon slides"></span>Slides</a>
+    </td>
+  </tr>
+</table>
+
+
+<h2 id="coursework">Coursework</h2>
+<p>
+  Included are many of my summaries, term papers, and slide decks for talks. The computer-science department at the University of Paderborn distinguished five areas of study. Undergraduate/<a href="">Diplom</a> classes are tagged accordingly.
+</p>
+<ol>
+  <li>Software engineering and information systems</li>
+  <li>Models and algorithms</li>
+  <li>Embedded systems and system software</li>
+  <li>Human-machine interaction</li>
+  <li>Mathematics</li>
+</ol>
+<p>
+  Please note: While the summaries are for specific classes, and while they may even incorporate official lecture material, they are otherwise entirely my own work and have not been reviewed. Beware of mistakes. Most of the documents below are in German.
+</p>
+<ul class="table-list">
+  <li>
+    <p>
+      <strong>Methodologies of Scientific Work</strong>, winter semester 2006/2007, Prof. Dr.-Ing. Jörg Wallaschek
+    </p>
+    <p>
+      Our talk was titled “Organization and Management of Research and Development Projects”.
+    </p>
+    <a class="text-nowrap" href="http://homepages.uni-paderborn.de/fschopp/promotion/docs/projectmanagement.pdf"><span class="icon slides"></span>Slides</a>
+  </li>
+  <li>
+    <p>
+      <strong>Scientific Computation: Data Science and Classification</strong>, summer semester 2007, Dr. Robert Preis
+    </p>
+    <p>
+      My talk was titled “Analysis of Music data”.
+    </p>
+    <a class="text-nowrap" href="http://homepages.uni-paderborn.de/fschopp/promotion/docs/musicdataanalysis.pdf"><span class="icon slides"></span>Slides</a>
+  </li>
+  <li>
+    <p>
+      <span class="tag mua"></span>
+      <strong>Projectgruppe SEROSE</strong>, winter and summer semesters 2004/2005, Dr. Rainer Feldmann and Yvonne Bleischwitz
+    </p>
+    <p>
+      This was a year-long project with 8 students working on “Selfish Routing in <a href="https://en.wikipedia.org/wiki/Sokoban">Sokoban</a> Environments”. The goal was to use theoretical work for practical software engineering, creating a system that would: assign transport tasks to players bidding for contracts, compute both macro- and microeconomically optimal solutions, and have a graphical-user interface with convenience features such as generating test instances.
+    </p>
+    <p>
+      The summary below is for the papers <a href="https://doi.org/10.1145/352871.352872">“Bidding and allocation in combinatorial auctions”</a> (Nisan, 2000) and <a href="https://doi.org/10.1287/moor.1040.0098">“Selfish Routing in Capacitated Networks”</a> (Correa et al., 2004). The term paper and the slides are about the latter of the two papers.
+    </p>
+    <p>
+      The project also included a talk series, in which I gave a talk about the latter of the previous papers.
+    </p>
+    <a class="text-nowrap" href="http://homepages.uni-paderborn.de/fschopp/hauptstudium/docs/seminar.pdf"><span class="icon notes"></span>Summary</a>
+    <span class="separator"></span>
+    <a class="text-nowrap" href="http://homepages.uni-paderborn.de/fschopp/hauptstudium/docs/selfishrouting.pdf"><span class="icon notes"></span>Term Paper</a>
+    <span class="separator"></span>
+    <a class="text-nowrap" href="http://homepages.uni-paderborn.de/fschopp/hauptstudium/docs/selfishroutingfolien.pdf"><span class="icon slides"></span>Slides</a>
+  </li>
+  <li>
+    <p>
+      <span class="tag mua"></span>
+      <strong>Approximationsalgorithmen</strong>, summer semester 2005, Dr. Ulf-Peter Schröder
+    </p>
+    <p>
+      Topics included graph coloring, non-approximability results, algorithms with relative approximation guarantees, approximation schemes, pseudo-polynomial-time algorithms, complexity classes and hierarchy, randomized algorithms, semidefinite programming.
+    </p>
+    <a class="text-nowrap" href="http://homepages.uni-paderborn.de/fschopp/hauptstudium/docs/approxalg.pdf"><span class="icon notes"></span>Summary</a>
+  </li>
+  <li>
+    <p>
+      <span class="tag mua"></span>
+      <strong>Nicht-kooperative Netze</strong>, summer semester 2005, Prof. Dr. Burkhard Monien
+    </p>
+    <p>
+      Introduction to non-cooperative game theory, congestion games, self-interested load balancing, computation and computational complexity of Nash equilibria, the <a href="https://en.wikipedia.org/wiki/John_Glen_Wardrop">Wardrop</a> model.
+    </p>
+    <p>
+      Our solution (together with Sebastian Aland and Dominic Dumrauf) to a problem set in this class was the basis for publication <a href="#ADGMS06">ADGMS06</a>.
+    </p>
+    <a class="text-nowrap" href="http://homepages.uni-paderborn.de/fschopp/hauptstudium/docs/nknetze.pdf"><span class="icon notes"></span>Summary</a>
+  </li>
+  <li>
+    <p>
+      <span class="tag systems"></span>
+      <strong>Seminar Real-Time Operating Systems</strong>, summer semester 2005, Prof. Dr. Franz Rammig and Marcelo Götz
+    </p>
+    <p>
+      This talk series was about real-time operating systems. We gave a talk about <a href="http://www.enea.com/solutions/rtos/ose">Enea OSE</a>.
+    </p>
+    <a class="text-nowrap" href="http://homepages.uni-paderborn.de/fschopp/hauptstudium/docs/rtos.pdf"><span class="icon notes"></span>Term Paper</a>
+    <span class="separator"></span>
+    <a class="text-nowrap" href="http://homepages.uni-paderborn.de/fschopp/hauptstudium/docs/rtosfolien.pdf"><span class="icon slides"></span>Slides</a>
+  </li>
+  <li>
+    <p>
+      <span class="tag maths"></span>
+      <strong>Stochastik I</strong>, winter semester 2004/2005, Prof. Dr. Björn Schmalfuß
+    </p>
+    <p>
+      Topics included set systems, algebras, measure theory with Lebesgue integration and product spaces, probability theory, limit theorems, random-number generation, stochastic processes, Black–Scholes, and statistical tests.
+    </p>
+    <a class="text-nowrap" href="http://homepages.uni-paderborn.de/fschopp/hauptstudium/docs/stochastik.pdf"><span class="icon notes"></span>Summary</a>
+  </li>
+  <li>
+    <p>
+      <span class="tag maths"></span>
+      <strong>Seminar Zahlen: Berechnung von π</strong>, winter semester 2004/2005, Prof. Dr. Joachim von zur Gathen and Dr. Michael Nüsken
+    </p>
+    <p>
+      This talk series was about the computation of π. I gave a talk about the paper <a href="https://doi.org/10.2307/2975006">“A Spigot Algorithm for the Digits of π”</a> (Rabinowitz and Wagon, 1995).
+    </p>
+    <a class="text-nowrap" href="http://homepages.uni-paderborn.de/fschopp/hauptstudium/docs/zapfhahn.pdf"><span class="icon notes"></span>Term Paper</a>
+    <span class="separator"></span>
+    <a class="text-nowrap" href="http://homepages.uni-paderborn.de/fschopp/hauptstudium/docs/zapfhahnfolien.pdf"><span class="icon slides"></span>Slides</a>
+  </li>
+  <li>
+    <p>
+      <span class="tag mmw"></span>
+      <strong>Seminar Perspektiven der Software-Ergonomie</strong>, summer semester 2004, Prof. Dr. Keil-Slawik and Joanna Slawik.
+    </p>
+    <p>
+      This talk series was about software ergonomics. We gave a talk about usability in the software development lifecycle.
+    </p>
+    <a class="text-nowrap" href="http://homepages.uni-paderborn.de/fschopp/hauptstudium/docs/softwareergonomie.pdf"><span class="icon notes"></span>Term Paper</a>
+    <span class="separator"></span>
+    <a class="text-nowrap" href="http://homepages.uni-paderborn.de/fschopp/hauptstudium/docs/softwareergonomiefolien.pdf"><span class="icon slides"></span>Slides</a>
+  </li>
+  <li>
+    <p>
+      <span class="tag mmw"></span>
+      <strong>Computergrafik II</strong>, summer semester 2004, Prof. Dr. Gitta Domik
+    </p>
+    <p>
+      Topics included: Mathematical modelling, splines, lighting, animation, morphing, texture mapping, radiosity, ray tracing, volume rendering.
+    </p>
+    <a class="text-nowrap" href="http://homepages.uni-paderborn.de/fschopp/hauptstudium/docs/computergrafikII.pdf"><span class="icon notes"></span>Summary</a>
+  </li>
+  <li>
+    <p>
+      <span class="tag mmw"></span>
+      <strong>Digitale Bildverarbeitung</strong>, summer semester 2004, Prof. Dr. Gitta Domik
+    </p>
+    <p>
+      Topics included, among others: Color schemes, rasterization, Fourier Transform, filters, image restauration, compression.
+    </p>
+    <a class="text-nowrap" href="http://homepages.uni-paderborn.de/fschopp/hauptstudium/docs/bildverarbeitung.pdf"><span class="icon notes"></span>Summary</a>
+  </li>
+  <li>
+    <p>
+      <span class="tag maths"></span>
+      <strong>Algebra I</strong>, summer semester 2004, Prof. Dr. Henning Krause
+    </p>
+    <p>
+      Introduction to abstract algebra, from group theory over Galois theory to proofs of the impossibility of ruler-and-compass constructions.
+    </p>
+    <a class="text-nowrap" href="http://homepages.uni-paderborn.de/fschopp/hauptstudium/docs/algebra.pdf"><span class="icon notes"></span>Summary</a>
+    <span class="separator"></span>
+    <a class="text-nowrap" href="http://homepages.uni-paderborn.de/fschopp/hauptstudium/docs/algebrauebersicht.pdf"><span class="icon notes"></span>Overview of Dependencies</a>
+  </li>
+  <li>
+    <p>
+      <span class="tag mua"></span>
+      <strong>Online Algorithmen</strong>, winter semester 2003/2004, Jun. Prof. Dr. Christian Sohler
+    </p>
+    <p>
+      Online algorithms and formal proofs establishing their competitive ratios. Amortized analysis. Examples included list access, paging, load balancing, and self-adjusting search trees.
+    </p>
+    <a class="text-nowrap" href="http://homepages.uni-paderborn.de/fschopp/hauptstudium/docs/onlinealg.pdf"><span class="icon notes"></span>Summary</a>
+  </li>
+  <li>
+    <p>
+      <span class="tag software"></span>
+      <strong>Programming Languages and Compilers</strong>, winter semester 2003/2004, Prof. Dr. Uwe Kastens
+    </p>
+    <p>
+      Compiler structure, tokenization, parsing, hierarchy of grammars and their “parsability”, attribute grammars, name binding, type resolution.
+    </p>
+    <a class="text-nowrap" href="http://homepages.uni-paderborn.de/fschopp/hauptstudium/docs/plac.pdf"><span class="icon notes"></span>Summary</a>
+  </li>
+  <li>
+    <p>
+      <span class="tag mua"></span>
+      <strong>Kryptographie I / II</strong>, winter semester 2003/2004, Prof. Dr. Johannes Blömer
+    </p>
+    <p>
+      Number theory basics, ciphers, AES, asymmetric cryptography, Miller-Rabin test, Rabin cryptosystem, ElGamal encryption, and others. Morever, digital signatures, cryptographic hash functions, message authentication codes, undeniable signatures, identification protocols, and semantic security.
+    </p>
+    <a class="text-nowrap" href="http://homepages.uni-paderborn.de/fschopp/hauptstudium/docs/krypto.pdf"><span class="icon notes"></span>Summary</a>
+  </li>
+  <li>
+    <p>
+      <span class="tag systems"></span>
+      <strong>Betriebssysteme</strong>, winter semester 2003/2004, Prof. Dr. Odej Kao
+    </p>
+    <p>
+      Operating systems: History, processes, threads, scheduling, memory management, I/O, drivers, file systems, security. Term project was modifying Minix.
+    </p>
+    <a class="text-nowrap" href="http://homepages.uni-paderborn.de/fschopp/hauptstudium/docs/betriebssysteme.pdf"><span class="icon notes"></span>Summary</a>
+  </li>
+  <li>
+    <p>
+      <span class="tag mmw"></span>
+      <strong>Computergrafik I</strong>, winter semester 2003/2004, Prof. Dr. Gitta Domik
+    </p>
+    <p>
+      Introduction to computer graphics: from geometry and linear algebra to OpenGL, occlusion culling, and rasterization.
+    </p>
+    <a class="text-nowrap" href="http://homepages.uni-paderborn.de/fschopp/hauptstudium/docs/computergrafikI.pdf"><span class="icon notes"></span>Summary</a>
+  </li>
+  <li>
+    <p>
+      <span class="tag maths"></span>
+      <strong>Numerik I</strong>, winter semester 2003/2004, Prof. Dr. Sönke Hansen
+    </p>
+    <p>
+      Introduction to numerical analysis, from floating point (IEEE-754) over matrix decompositions and numerical solutions for systems of equations to numeric integration and splines.
+    </p>
+    <a class="text-nowrap" href="http://homepages.uni-paderborn.de/fschopp/hauptstudium/docs/numerik.pdf"><span class="icon notes"></span>Summary</a>
+  </li>
+  <li>
+    <p>
+      <span class="tag systems"></span>
+      <strong>Konzepte und Methoden der Systemsoftware</strong>, summer semester 2003, Prof. Dr. Odej Kao
+    </p>
+    <p>
+      Computer architecture, system software, scheduling, synchronization, resource management, and inter-process communication.
+    </p>
+    <a class="text-nowrap" href="http://homepages.uni-paderborn.de/fschopp/grundstudium/docs/kms.pdf"><span class="icon notes"></span>Summary</a>
+  </li>
+  <li>
+    <p>
+      <span class="tag mua"></span>
+      <strong>Berechenbarkeit und formale Sprachen</strong>, winter and summer semesters 2002/2003, Prof. Dr. Johannes Blömer
+    </p>
+    <p>
+      Models of computation, formal languages, Chomsky hierarchy, pumping lemma. Moreover, complexity classes, non-determinism, and introduction to approximation algorithms.
+    </p>
+    <a class="text-nowrap" href="http://homepages.uni-paderborn.de/fschopp/grundstudium/docs/bfs_auk.pdf"><span class="icon notes"></span>Summary</a>
+  </li>
+  <li>
+    <p>
+      <span class="tag maths"></span>
+      <strong>Stochastik für Informatiker</strong>, winter semester 2002/2003, Prof. Dr. Hans M. Dietz
+    </p>
+    <p>
+      Introductory probability theory: Combinatorics, algebras, measure spaces, distributions, random variables, limit theorems, stochastic processes, etc.
+    </p>
+    <a class="text-nowrap" href="http://homepages.uni-paderborn.de/fschopp/grundstudium/docs/stochastik.pdf"><span class="icon notes"></span>Summary</a>
+  </li>
+  <li>
+    <p>
+      <span class="tag software"></span>
+      <strong>Techniken des Softwareentwurfs II</strong>, winter semester 2002/2003, Dr. Reiko Heckel
+    </p>
+    <p>
+      Software development as an engineering discipline, part II: data models, the relational model and relational algebra, normal forms, database management systems
+    </p>
+    <a class="text-nowrap" href="http://homepages.uni-paderborn.de/fschopp/grundstudium/docs/tse2.pdf"><span class="icon notes"></span>Summary</a>
+  </li>
+  <li>
+    <p>
+      <span class="tag software"></span>
+      <strong>Techniken des Softwareentwurfs I</strong>, winter semester 2002/2003, Dr. Reiko Heckel
+    </p>
+    <p>
+      Software development as an engineering discipline, part I: functional specification, architecture, design, organizational planning. UML.
+    </p>
+    <a class="text-nowrap" href="http://homepages.uni-paderborn.de/fschopp/grundstudium/docs/tse1.pdf"><span class="icon notes"></span>Summary</a>
+  </li>
+  <li>
+    <p>
+      <span class="tag maths"></span>
+      <strong>Analysis I / II</strong>, winter and summer semesters 2002/2003, Prof. Dr. Sönke Hansen.
+    </p>
+    <p>
+      Introduction to mathematical analysis, with an axiomatic deduction of basic topics including: complex numbers, compactness, completeness, the Bolzano–Weierstrass theorem, series, continuity, Taylor series, multi-dimensional differentiation and integration, extrema with side constraints.
+    </p>
+    <a class="text-nowrap" href="http://homepages.uni-paderborn.de/fschopp/grundstudium/docs/analysis2.pdf"><span class="icon notes"></span>Summary (only Analysis II)</a>
+    <span class="separator"></span>
+    <a class="text-nowrap" href="http://homepages.uni-paderborn.de/fschopp/grundstudium/docs/analysisuebersicht.pdf"><span class="icon notes"></span>Overview of Dependencies</a>
+  </li>
+  <li>
+    <p>
+      <span class="tag mua"></span>
+      <strong>Datenstrukturen und Algorithmen</strong>, summer semester 2002, Prof. Dr. Burkhard Monien
+    </p>
+    <p>
+      Big O notation and master theorem, fundamental algorithms and data structures, algorithm design patterns.
+    </p>
+    <a class="text-nowrap" href="http://homepages.uni-paderborn.de/fschopp/grundstudium/docs/dua.pdf"><span class="icon notes"></span>Summary</a>
+  </li>
+  <li>
+    <p>
+      <span class="tag software"></span>
+      <strong>Grundlagen der Programmiersprachen</strong>, summer semester 2002, Prof. Dr. Uwe Kastens
+    </p>
+    <p>
+      Foundations of programming languages, touching on different programming paradigms (imperative, functional, logic) as well as basic responsibilities of compilers.
+    </p>
+    <a class="text-nowrap" href="http://homepages.uni-paderborn.de/fschopp/grundstudium/docs/gdp.pdf"><span class="icon notes"></span>Summary</a>
+  </li>
+  <li>
+    <p>
+      <span class="tag software"></span>
+      <strong>Softwareentwicklung</strong>, winter and summer semesters 2001/2002, Prof. Dr. Gerd Szwillus.
+    </p>
+    <p>
+      Introduction to Java as well as fundamental aspects of imperative and object-oriented programming.
+    </p>
+    <a class="text-nowrap" href="http://homepages.uni-paderborn.de/fschopp/grundstudium/docs/swelang.pdf"><span class="icon notes"></span>Summary</a>
+  </li>
+  <li>
+    <p>
+      <span class="tag mmw"></span>
+      <strong>Praxis der Systemgestaltung</strong>, winter semester 2001/2002, Prof. Dr. Johannes Magenheim.
+    </p>
+    <p>
+      Practical aspects of engineering, such as the project dvelopment lifecycle, human-computer interaction, ergonomics, privacy laws, etc.
+    </p>
+    <a class="text-nowrap" href="http://homepages.uni-paderborn.de/fschopp/grundstudium/docs/pds.pdf"><span class="icon notes"></span>Summary</a>
+  </li>
+  <li>
+    <p>
+      <span class="tag maths"></span><strong>Lineare Algebra I / II</strong>, winter and summer semesters 2001/2002, Dr. Christian Nelius.
+    </p>
+    <p>
+      Introduction to linear algebra, from vector spaces to the fundamental theorem of algebra and unitary spaces.
+    </p>
+    <a class="text-nowrap" href="http://homepages.uni-paderborn.de/fschopp/grundstudium/docs/linearealgebra.pdf"><span class="icon notes"></span>Summary</a>
+    <span class="separator"></span>
+    <a class="text-nowrap" href="http://homepages.uni-paderborn.de/fschopp/grundstudium/docs/linearealgebrauebersicht.pdf"><span class="icon notes"></span>Overview of Dependencies</a>
+  </li>
+</ul>
+
+</div>

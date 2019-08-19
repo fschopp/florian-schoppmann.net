@@ -1,0 +1,281 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400,700&display=swap);
+
+/* Move down content because we have a fixed navbar that is 56px tall */
+body {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 300;
+  margin-top: 56px;
+  padding-bottom: 20px;
+}
+
+small {
+  font-weight: 300;
+}
+
+.icon {
+  top: 2px;
+  margin-right: 6px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  position: relative;
+  background: no-repeat;
+  background-size: 16px 16px;
+}
+
+.separator {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.separator:before {
+  content: " · ";
+}
+
+strong {
+  font-weight: bold;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+p.links {
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+/* icons */
+.linkedin {
+  background-image: url("/assets/icons/linkedin.png");
+}
+
+.facebook {
+  background-image: url("/assets/icons/facebook.png");
+}
+
+.bitbucket {
+  background-image: url("/assets/icons/bitbucket.svg");
+}
+
+.researchgate {
+  background-image: url("/assets/icons/researchgate.svg");
+}
+
+.twitter {
+  background-image: url("/assets/icons/twitter.svg");
+}
+
+.mail {
+  background-image: url("/assets/icons/mail.svg");
+}
+
+.document {
+  background-image: url("/assets/icons/document.svg");
+}
+
+.link {
+  background-image: url("/assets/icons/link.svg");
+}
+
+.github {
+  background-image: url("/assets/icons/github.svg");
+}
+
+.youtube {
+  background-image: url("/assets/icons/youtube.svg");
+}
+
+.notes {
+  background-image: url("/assets/icons/document.svg");
+}
+
+.slides {
+  background-image: url("/assets/icons/presentation.svg");
+}
+
+.doi {
+  background-image: url("/assets/icons/doi.svg");
+}
+
+/* list that looks like a bootstrap table */
+ul.table-list {
+  list-style: none;
+  padding: 0;
+}
+
+.table-list li {
+  border-top: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table-list li:nth-of-type(odd) {
+  background: #f9f9f9;
+}
+
+.table-list li:first-of-type {
+  border-top: 0;
+}
+
+table.table tr:first-child td {
+  border-top: 0;
+}
+
+.tag {
+  margin-left: 20px;
+  float: right;
+  border-radius: 10px;
+  padding: 1px 10px;
+  vertical-align: baseline;
+  font-size: 12px;
+}
+
+.maths {
+  background-color: darksalmon;
+}
+.maths::before {
+  content: "mathematics"
+}
+
+.mua {
+  background-color: lightblue;
+}
+.mua::before {
+  content: "models & algorithms"
+}
+
+.systems {
+  background-color: moccasin;
+}
+.systems::before {
+  content: "systems"
+}
+
+.software {
+  background-color: mediumaquamarine;
+}
+.software::before {
+  content: "software"
+}
+
+.mmw {
+  background-color: yellow;
+}
+.mmw::before {
+  content: "HMI";
+}
+
+/* Inlined SVG DOM serving as "library" */
+#common-svg {
+  left: 0;
+  top: 0;
+  height: 0;
+  width: 0;
+  position: absolute;
+  visibility: hidden;
+}
+
+svg {
+  font-size: 11px;
+}
+
+svg text {
+  pointer-events: none;
+}
+
+ol ol, ul ol {
+  list-style-type: lower-roman;
+}
+
+ul ul ol, ul ol ol, ol ul ol, ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+#aerobotx-video {
+  max-width: 510px;
+}
+
+#cloudkeeper-figure {
+  max-width: 330px;
+}
+
+#madlib-figure {
+  max-width: 220px;
+}
+
+#latin-screenshot {
+  max-width: calc(1076px / 3);
+}
+
+#wincowas-screenshot {
+  max-width: calc(762px / 2);
+  margin-top: -12px;
+  margin-bottom: -20px;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+/* Undo additional padding */
+@media (min-width:576px) {
+  .jumbotron {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .jumbotron p.lead {
+    font-size: 1.5rem;
+  }
+}
+
+/* If height is less than 480, switch to  */
+@media (max-height: 480px) {
+  body {
+    margin-top: 0;
+  }
+
+  .navbar {
+    margin-bottom: 0;
+  }
+
+  .navbar.fixed-top {
+    position: static;
+  }
+}
+
+h1, h2, h3 {
+  margin-top: 20px;
+}
+
+h1 + h2, h2 + h3 {
+  margin-top: 15px;
+}
+
+.row + h1, .row + h2, .row + h3 {
+  margin-top: 40px;
+}
+
+/* Ensure that anchors have a position that is in the visible area
+   (and not behind the nav bar). */
+@media (min-height: 481px) {
+  h1[id], h2[id], h3[id] {
+    /* h1, h2, h3 normally have style "margin-top: 20px" */
+    padding-top: 76px;
+    margin-top: -56px;
+  }
+
+  h1 + h2[id], h2 + h3[id] {
+    padding-top: 71px;
+    margin-top: -56px;
+  }
+
+  .row + h1[id], .row + h2[id], .row + h3[id] {
+    padding-top: 96px;
+    margin-top: -56px;
+  }
+
+  ul[id], p[id] {
+    padding-top: 56px;
+    margin-top: -56px;
+  }
+}
